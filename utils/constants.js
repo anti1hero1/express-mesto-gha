@@ -1,9 +1,4 @@
-const CAST_ERROR = 400;
-const NOT_FOUND_ERROR = 404;
-const SERVER_ERROR = 500;
+const httpRegex = /^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_+.~#?&/=]*)$/;
+const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
 
-module.exports = {
-  CAST_ERROR,
-  NOT_FOUND_ERROR,
-  SERVER_ERROR,
-};
+module.exports = { httpRegex, emailRegex };
